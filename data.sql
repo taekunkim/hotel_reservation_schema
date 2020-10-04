@@ -5,14 +5,15 @@ INSERT INTO guest VALUES
 
 INSERT INTO hostess VALUES
 (DEFAULT, 'lewiskim@gmail.com'),
-(DEFAULT, 'lewiskim@gmail.com'),
 (DEFAULT, 'lewiskim@gmail.com');
+-- (DEFAULT, 'lewiskim@gmail.com'); -- email taken by two hosts
 
 INSERT INTO property VALUES
 (DEFAULT, 1, 1, 1, 2, '300 A St');
 
 INSERT INTO rental VALUES
-(DEFAULT, 1, 1, STR_TO_DATE('10-01-2020', '%m-%d-%Y'), 1, 0000000000000000);
+(DEFAULT, 1, 1, STR_TO_DATE('10-03-2020', '%m-%d-%Y'), 1, 0000000000000000);
+-- (DEFAULT, 1, 1, STR_TO_DATE('10-05-2020', '%m-%d-%Y'), 1, 0000000000000000); -- the date is a Monday, not a Saturday
 
 INSERT INTO additional_guest VALUES
 (1, 2); -- validadditional_guesthostess
