@@ -62,7 +62,8 @@ CREATE TABLE rental (
     start_week DATE NOT NULL,
     num_week INTEGER NOT NULL,
     credit_card INTEGER NOT NULL,
-    -- CONSTRAINT saturday_check CHECK (DAYOFWEEK(start_week) = 7),
+    CONSTRAINT saturday_check 
+		CHECK (DAYOFWEEK(start_week) = 7),
     FOREIGN KEY (id_property) REFERENCES property (id_property),
     FOREIGN KEY (id_renter) REFERENCES guest (id_guest)
 );
